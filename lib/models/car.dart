@@ -15,18 +15,18 @@ class Car {
     required this.type,
   });
 
-  // Constructor per crear un objecte Car a partir d'un Map
+  // Convertir JSON a un objecte Car
   factory Car.fromMap(Map<String, dynamic> map) {
     return Car(
-      id: map['id'] as int,
-      year: map['year'] as int,
-      make: map['make'] as String,
-      model: map['model'] as String,
-      type: map['type'] as String,
+      id: map['id'],
+      year: map['year'],
+      make: map['make'],
+      model: map['model'],
+      type: map['type'],
     );
   }
 
-  // Mètode per convertir l'objecte Car a un Map
+  // Convertir Car a JSON
   Map<String, dynamic> toMap() {
     return {
       'id': id,
@@ -37,9 +37,13 @@ class Car {
     };
   }
 
-  // Conversió directa de una cadena JSON a un objecte Car
   factory Car.fromJson(String source) => Car.fromMap(json.decode(source));
 
-  // Convertir l'objecte Car a una cadena JSON
   String toJson() => json.encode(toMap());
+
+  static List<Car> carModelFromJson(String str) =>
+      List<Car>.from(json.decode(str).map((x) => Car.fromMap(x)));
+
+  static String carModelToJson(List<Car> data) =>
+      json.encode(List<dynamic>.from(data.map((x) => x.toMap())));
 }
