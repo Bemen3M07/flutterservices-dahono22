@@ -28,4 +28,12 @@ Aquesta aplicació Flutter té com a objectiu demostrar la integració d'APIs RE
 
 ---
 
+## Vídeo Funcionament de la App
+
+![Video Preview](assets/P3B.mp4)  
+
+Per veure com funciona l'aplicació, mira el vídeo situat a `/assets/P3B.mp4`.
+
+---
+
 Aquesta documentació resumeix el que fa l'aplicació i les tecnologies emprades, facilitant-ne la comprensió i el manteniment.
