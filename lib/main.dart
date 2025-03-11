@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pràctica JSON Car',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/', 
       routes: {
         '/': (context) => const HomeScreen(),
         '/joke': (context) => const JokeScreen(), // <-- Nova ruta

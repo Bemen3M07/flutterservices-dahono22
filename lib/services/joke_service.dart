@@ -18,7 +18,7 @@ class JokeService {
         throw Exception('No s\'han trobat acudits');
       }
     } else {
-      throw Exception('Error al carregar l\'acudit');
+      throw Exception('Error al carregar l\'acudit :(');
     }
   }
 }

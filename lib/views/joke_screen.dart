@@ -25,7 +25,7 @@ class JokeScreen extends StatelessWidget {
                       ? Text('Error: ${jokeProvider.error}')
                       : Text(
                           jokeProvider.joke,
-                          style: const TextStyle(fontSize: 18),
+                          style: const TextStyle(fontSize: 19),
                           textAlign: TextAlign.center,
                         ),
               const SizedBox(height: 20),

@@ -30,7 +30,7 @@ class JokeProvider extends ChangeNotifier {
           _error = "No s'han trobat acudits.";
         }
       } else {
-        _error = "Error en carregar els acudits.";
+        _error = "Error en carregar els acudits. :(";
       }
     } catch (e) {
       _error = "Error: $e";
